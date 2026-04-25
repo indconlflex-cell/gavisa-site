@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gavisa - Conforto e Qualidade</title>
-    <meta name="description" content="Descubra a linha exclusiva de estofados e almofadas da Gavisa. O conforto que faltava agora é seu.">
+    <title>Gavisa - Estofados e Poltronas de Luxo</title>
+    <meta name="description" content="Descubra a linha exclusiva de poltronas e pufes da Gavisa. O conforto e sofisticação que sua casa merece.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <script>
         tailwind.config = {
             theme: {
@@ -14,58 +16,61 @@
                         brand: {
                             50: '#fdf8f6',
                             100: '#f2e8e5',
-                            500: '#c58e74', /* Cor base puxada para tons terrosos/almofadas */
+                            500: '#c58e74', /* Tom dourado principal das logos */
                             600: '#b0795f',
-                            900: '#4a3328',
+                            900: '#4a3328', /* Tom marrom escuro da logo */
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .product-card img { transition: transform 0.5s ease; }
+        .product-card:hover img { transform: scale(1.05); }
+    </style>
 </head>
 <body class="bg-brand-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex justify-between items-center h-24">
                 <div class="flex-shrink-0 flex items-center">
-                    <span class="text-2xl font-bold tracking-widest text-brand-900 uppercase">GAVISA</span>
+                    <a href="#inicio">
+                        <img class="h-16 w-auto" src="https://conlflex.com.br/media/pcloud/87222320049?asset=397&filename=gemini-generated-image-u5fmpru5fmpru5fm-1.webp&signature=4b696baffd0e64f05fe51f60eae57bc4fc5918d62525e307bb66cec8926dbaa8" alt="Gavisa Logo Horizontal">
+                    </a>
                 </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-slate-600 hover:text-brand-600 font-medium transition">Início</a>
-                    <a href="#produtos" class="text-slate-600 hover:text-brand-600 font-medium transition">Produtos</a>
-                    <a href="#sobre" class="text-slate-600 hover:text-brand-600 font-medium transition">Sobre a Gavisa</a>
-                    <a href="#contato" class="text-slate-600 hover:text-brand-600 font-medium transition">Contato</a>
+                <nav class="hidden md:flex space-x-8 uppercase tracking-wider text-sm">
+                    <a href="#inicio" class="text-slate-600 hover:text-brand-900 font-medium transition">Início</a>
+                    <a href="#poltronas" class="text-slate-600 hover:text-brand-900 font-medium transition">Poltronas</a>
+                    <a href="#pufes" class="text-slate-600 hover:text-brand-900 font-medium transition">Pufes</a>
+                    <a href="#sobre" class="text-slate-600 hover:text-brand-900 font-medium transition">Sobre Nós</a>
+                    <a href="#contato" class="text-slate-600 hover:text-brand-900 font-medium transition">Contato</a>
                 </nav>
                 <div class="hidden md:flex">
-                    <a href="#produtos" class="bg-brand-900 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-brand-600 transition shadow-md">Ver Catálogo</a>
+                    <a href="#contato" class="bg-brand-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-500 transition shadow-md uppercase text-xs tracking-widest">Atendimento SAC</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="inicio" class="relative bg-white overflow-hidden">
+    <section id="inicio" class="relative bg-white overflow-hidden border-b border-slate-100">
         <div class="max-w-7xl mx-auto">
-            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-20 px-4 sm:px-6 lg:px-8">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 pt-16 px-4 sm:px-6 lg:px-8">
                 <main class="mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
                     <div class="sm:text-center lg:text-left">
                         <h1 class="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl leading-tight">
                             <span class="block xl:inline">O conforto que faltava,</span>
-                            <span class="block text-brand-500 xl:inline">agora na sua casa.</span>
+                            <span class="block text-brand-500 xl:inline">agora é seu.</span>
                         </h1>
                         <p class="mt-3 text-base text-slate-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                            Especialistas em estofados, almofadas e complementos de alto padrão. Transforme seu ambiente com a qualidade e sofisticação que só a Gavisa oferece.
+                            Poltronas e pufes de alto padrão, onde cada detalhe é desenhado para unir design contemporâneo e o máximo conforto. Transforme seu ambiente com a Gavisa.
                         </p>
                         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <div class="rounded-md shadow">
-                                <a href="#produtos" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-brand-600 hover:bg-brand-500 md:py-4 md:text-lg md:px-10 transition">
+                                <a href="#poltronas" class="w-full flex items-center justify-center px-10 py-4 border border-transparent text-base font-medium rounded-full text-white bg-brand-900 hover:bg-brand-600 md:text-lg transition uppercase tracking-wider text-sm">
                                     Conhecer Produtos
-                                </a>
-                            </div>
-                            <div class="mt-3 sm:mt-0 sm:ml-3">
-                                <a href="#contato" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-brand-600 bg-brand-100 hover:bg-brand-50 md:py-4 md:text-lg md:px-10 transition">
-                                    Fale Conosco
                                 </a>
                             </div>
                         </div>
@@ -73,94 +78,173 @@
                 </main>
             </div>
         </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1540574163026-643ea20d25b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sofá confortável em ambiente moderno">
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 border-l border-slate-100">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://conlflex.com.br/media/pcloud/87149515265?asset=358&filename=conjunto-sofia-verdepreto-1.webp&signature=1c4cbfc973e3ea554cd472b8575b3d970823f91b7aeb187b4644f5c186640a14" alt="Conjunto Poltronas Sofia Gavisa">
         </div>
     </section>
 
-    <section id="produtos" class="py-20 bg-brand-50">
+    <section id="poltronas" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Nossos Destaques</h2>
-                <p class="mt-4 max-w-2xl text-xl text-slate-500 mx-auto">Peças desenhadas para unir design contemporâneo e máximo conforto.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-base text-brand-600 font-semibold tracking-wide uppercase">Coleção Exclusiva</h2>
+                <p class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Poltronas de Alto Padrão</p>
             </div>
 
-            <div class="mt-16 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:gap-x-8">
-                <div class="group relative bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow duration-300">
-                    <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-t-2xl overflow-hidden group-hover:opacity-90 transition-opacity lg:h-80 lg:aspect-none">
-                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Almofada Gavisa" class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+            <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 gap-x-8 lg:grid-cols-3 xl:gap-x-10">
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87156743725?asset=390&filename=poltrona-livia-boucle-offwhite-1.webp&signature=18b0d7865dbb77b888331b1995b6272227df3972189928247e9f93b40d228acd" alt="Poltrona Lívia Boucle Offwhite" class="w-full h-full object-center object-contain p-4">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-slate-900">Linha de Almofadas</h3>
-                        <p class="mt-2 text-sm text-slate-500">Toque macio, tecidos selecionados e acabamento impecável para a sua sala.</p>
-                    </div>
-                </div>
-
-                <div class="group relative bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow duration-300">
-                    <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-t-2xl overflow-hidden group-hover:opacity-90 transition-opacity lg:h-80 lg:aspect-none">
-                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Puffs e Estofados" class="w-full h-full object-center object-cover lg:w-full lg:h-full">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-slate-900">Puffs e Assentos</h3>
-                        <p class="mt-2 text-sm text-slate-500">Versatilidade e elegância. Peças que se adaptam a qualquer espaço da casa.</p>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Poltrona Lívia Boucle</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Offwhite</p>
+                        <p class="mt-3 text-base text-slate-600">Toque macio e design orgânico que abraça.</p>
                     </div>
                 </div>
 
-                <div class="group relative bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100 hover:shadow-lg transition-shadow duration-300">
-                    <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-t-2xl overflow-hidden group-hover:opacity-90 transition-opacity lg:h-80 lg:aspect-none">
-                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sofás Gavisa" class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87156655090?asset=365&filename=poltrona-livia-boucle-grafite-1.webp&signature=f35a27548713dfd150af7cb62d06eaff4fdebf397253ef627e54ba91ad243c2d" alt="Poltrona Lívia Boucle Grafite" class="w-full h-full object-center object-contain p-4">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold text-slate-900">Sofás Premium</h3>
-                        <p class="mt-2 text-sm text-slate-500">Estrutura robusta e espumas de alta densidade para momentos inesquecíveis.</p>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Poltrona Lívia Boucle</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Grafite</p>
+                        <p class="mt-3 text-base text-slate-600">Sofisticação e elegância em tons sóbrios.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87149515265?asset=358&filename=conjunto-sofia-verdepreto-1.webp&signature=1c4cbfc973e3ea554cd472b8575b3d970823f91b7aeb187b4644f5c186640a14" alt="Conjunto Poltronas Sofia Gavisa" class="w-full h-full object-center object-contain p-4">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Conjunto Poltronas Sofia</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Verde/Preto</p>
+                        <p class="mt-3 text-base text-slate-600">Contraste moderno para ambientes arrojados.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87144531199?asset=318&filename=poltrona-aurora-linho-40-verde-ambientada.webp&signature=86f08baf68170aec648e356592a55cebf8581dff189aa8ca42946f72fdc65933" alt="Poltrona Aurora Linho Verde" class="w-full h-full object-center object-contain p-4">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Poltrona Aurora Linho 40</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Verde</p>
+                        <p class="mt-3 text-base text-slate-600">O frescor do linho com o conforto Gavisa.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87144490136?asset=306&filename=poltrona-aurora-linho40-grafite-gavisa-1.webp&signature=245347668faf8ee830ad439a5fcbe3d22c09729fe4fbc6f97f3e7ccc6670780b" alt="Poltrona Aurora Linho Grafite Gavisa" class="w-full h-full object-center object-contain p-4">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Poltrona Aurora Linho 40</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Grafite</p>
+                        <p class="mt-3 text-base text-slate-600">Presença robusta e design atemporal.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-1 aspect-h-1 rounded-t-3xl overflow-hidden bg-slate-50 border-b border-slate-100">
+                        <img src="https://conlflex.com.br/media/pcloud/87107868818?asset=266&filename=poltrona-maya-gavisa-2.webp&signature=fb4999dc1455ebd16eadefa33aa274c532ea96dfb320474ade545e0e8b0878fb" alt="Poltrona Maya Gavisa" class="w-full h-full object-center object-contain p-4">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Poltrona Maya</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Coleção Atual</p>
+                        <p class="mt-3 text-base text-slate-600">A versatilidade que seu ambiente precisa.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="py-16 bg-white border-t border-slate-100">
+    <section id="pufes" class="py-24 bg-brand-50 border-t border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-base text-brand-600 font-semibold tracking-wide uppercase">Nossa História</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-                    Tradição em fazer bem feito
-                </p>
-                <p class="mt-4 max-w-3xl text-xl text-slate-500 lg:mx-auto">
-                    A Gavisa nasceu com o propósito de entregar mais do que móveis e estofados: entregamos bem-estar. Com processos rigorosos de qualidade e matérias-primas selecionadas, cada detalhe é pensado para durar.
-                </p>
+            <div class="text-center mb-16">
+                <h2 class="text-base text-brand-600 font-semibold tracking-wide uppercase">Complementos</h2>
+                <p class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Pufes e Assentos Versáteis</p>
+                <p class="mt-4 max-w-2xl text-lg text-slate-500 mx-auto">Conforto extra e sofisticação para os momentos de descanso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-y-12 sm:grid-cols-2 gap-x-12 lg:max-w-4xl lg:mx-auto">
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-16 aspect-h-9 rounded-t-3xl overflow-hidden bg-white p-6">
+                        <img src="https://conlflex.com.br/media/pcloud/86862001493?asset=248&filename=puff-luna-gavisa-l-1.webp&signature=082ca7848159af54f81bb051b04684ec93fc6d61d4709a3f7ac51ba8c8a0acc5" alt="Puff Luna Gavisa L" class="w-full h-full object-center object-contain">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Puff Luna</h3>
+                        <p class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Tamanho L</p>
+                        <p class="mt-3 text-base text-slate-600">Amplo espaço e conforto macio. Ideal como apoio ou assento extra.</p>
+                    </div>
+                </div>
+
+                <div class="product-card group relative bg-white rounded-3xl shadow-sm overflow-hidden border border-slate-100 hover:border-brand-100 transition duration-300">
+                    <div class="w-full aspect-w-16 aspect-h-9 rounded-t-3xl overflow-hidden bg-white p-6">
+                        <img src="https://conlflex.com.br/media/pcloud/86858183362?asset=239&filename=puff-celine-gavisa-v-1.webp&signature=b88547c6bddf115eba0e693cf3d9a16bb48bd24d660ceba0ff1b3d99d59ce5ae" alt="Puff Celine Gavisa V" class="w-full h-full object-center object-contain">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900">Puff Celine</h3>
+                        <p   class="mt-1 text-sm text-slate-500 uppercase tracking-widest">Tamanho V</p>
+                        <p class="mt-3 text-base text-slate-600">Design compacto e elegante com costuras refinadas.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer id="contato" class="bg-brand-900 text-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <span class="text-2xl font-bold tracking-widest uppercase">GAVISA</span>
-                    <p class="mt-4 text-brand-100 text-sm">
-                        Excelência em conforto e design. Transformando casas em lares através de produtos feitos com paixão.
+    <section id="sobre" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="lg:text-left">
+                    <h2 class="text-base text-brand-600 font-semibold tracking-wide uppercase">Nossa História</h2>
+                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+                        A Arte de Criar Bem-Estar
+                    </p>
+                    <p class="mt-4 text-xl text-slate-500 lg:mx-auto">
+                        A Gavisa nasceu com o propósito de entregar mais do que móveis e estofados: entregamos momentos de paz e relaxamento. Nossa fábrica combina processos rigorosos de qualidade com matérias-primas selecionadas (espumas de alta densidade, linhos nobres, veludos macios e madeira robusta) para garantir que cada peça seja uma obra-prima de conforto e durabilidade.
+                    </p>
+                    <p class="mt-4 text-xl text-slate-500 lg:mx-auto">
+                        Cada detalhe é pensado e costurado com a paixão de quem entende que sua casa é seu refúgio.
+                    </p>
+                </div>
+                <div class="rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+                    <img src="https://conlflex.com.br/media/pcloud/87107868818?asset=266&filename=poltrona-maya-gavisa-2.webp&signature=fb4999dc1455ebd16eadefa33aa274c532ea96dfb320474ade545e0e8b0878fb" alt="Fábrica/Produto Gavisa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-brand-900 text-white border-t border-brand-600">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start gap-4">
+                    <img class="h-48 w-auto" src="https://conlflex.com.br/media/pcloud/87222320049?asset=397&filename=gemini-generated-image-u5fmpru5fmpru5fm-1.webp&signature=4b696baffd0e64f05fe51f60eae57bc4fc5918d62525e307bb66cec8926dbaa8" alt="Gavisa Logo Completa" style="filter: brightness(0) invert(1);">
+                    <p class="mt-4 text-brand-100 text-sm max-w-sm">
+                        Excelência em conforto e design. Transformando casas em lares através de poltronas e estofados feitos com paixão.
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-sm font-semibold uppercase tracking-wider text-brand-500">Contato</h3>
-                    <ul class="mt-4 space-y-2 text-sm text-brand-100">
-                        <li>(XX) XXXX-XXXX</li>
-                        <li>contato@gavisa.com.br</li>
-                        <li>São Paulo, SP - Brasil</li>
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-brand-500">Atendimento SAC</h3>
+                    <ul class="mt-6 space-y-3 text-base text-brand-100">
+                        <li class="font-bold">sac@gavisa.com.br</li>
+                        <li class="text-xs text-slate-400">São Paulo, SP - Brasil</li>
+                        <li class="text-xs text-slate-400">Atendimento das 9h às 18h</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-sm font-semibold uppercase tracking-wider text-brand-500">Links Rápidos</h3>
-                    <ul class="mt-4 space-y-2 text-sm text-brand-100">
+                    <h3 class="text-sm font-semibold uppercase tracking-widest text-brand-500">Links Rápidos</h3>
+                    <ul class="mt-6 space-y-3 text-base text-brand-100">
                         <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
-                        <li><a href="#produtos" class="hover:text-white transition">Catálogo de Produtos</a></li>
-                        <li><a href="#sobre" class="hover:text-white transition">Quem Somos</a></li>
+                        <li><a href="#poltronas" class="hover:text-white transition">Catálogo de Poltronas</a></li>
+                        <li><a href="#pufes" class="hover:text-white transition">Coleção de Pufes</a></li>
+                        <li><a href="#sobre" class="hover:text-white transition">Nossa História</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="mt-8 border-t border-brand-600 pt-8 flex justify-center text-sm text-brand-100">
-                <p>&copy; 2026 Gavisa. Todos os direitos reservados.</p>
+            <div class="mt-12 border-t border-brand-600 pt-10 flex justify-center text-sm text-brand-100">
+                <p>&copy; 2026 Gavisa. Todos os direitos reservados. Design e Qualidade.</p>
             </div>
         </div>
     </footer>
